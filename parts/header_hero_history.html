@@ -1,0 +1,190 @@
+<!-- CABECERA INSTITUCIONAL Y NAVEGACIÓN -->
+<header class="site-header" id="mainHeader">
+  <div class="container">
+    <div class="header-inner">
+      <!-- LOGO Y NOMBRE -->
+      <a href="#hero" class="brand-wrapper" aria-label="Inicio - Hermandad de la Borriquita">
+        <div class="brand-crest">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" width="42" height="42">
+            <circle cx="50" cy="50" r="46" stroke="#c29b38" stroke-width="2"/>
+            <circle cx="50" cy="50" r="41" stroke="#c29b38" stroke-width="1" stroke-dasharray="3 3"/>
+            <!-- Cruz central -->
+            <path d="M50 18V78M32 36H68" stroke="#c29b38" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Palma vegetal estilizada -->
+            <path d="M50 78C50 78 30 60 28 42C36 46 44 48 50 48" stroke="#dfbe65" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M50 78C50 78 70 60 72 42C64 46 56 48 50 48" stroke="#dfbe65" stroke-width="1.8" stroke-linecap="round"/>
+            <!-- Corona superior -->
+            <path d="M40 18L50 10L60 18L56 22H44L40 18Z" fill="#c29b38"/>
+            <circle cx="50" cy="10" r="2.5" fill="#dfbe65"/>
+          </svg>
+        </div>
+        <div class="brand-text-col">
+          <span class="brand-title">La Borriquita</span>
+          <span class="brand-subtitle">Fernán Núñez</span>
+        </div>
+      </a>
+
+      <!-- MENÚ PRINCIPAL -->
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#hero" class="nav-link active">Inicio</a>
+        <a href="#historia" class="nav-link">Hermandad</a>
+        <a href="#titulares" class="nav-link">Nuestros Titulares</a>
+        <a href="#historia" class="nav-link">Historia</a>
+        <a href="#actualidad" class="nav-link">Actualidad</a>
+        <a href="#cultos" class="nav-link">Cultos</a>
+        <a href="#penitencia" class="nav-link">Estación de Penitencia</a>
+        <a href="#galeria" class="nav-link">Galería</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <!-- ACCIONES: BUSCADOR, REDES Y BOTONES -->
+      <div class="header-actions">
+        <!-- BUSCADOR -->
+        <button class="icon-btn" id="openSearchBtn" aria-label="Buscar en la web" title="Buscar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- BOTÓN DESTACADO HAZTE HERMANO -->
+        <button class="btn-brother" onclick="openModal('modalHazteHermano')">
+          <span>Hazte Hermano</span>
+        </button>
+
+        <!-- BOTÓN ÁREA DEL HERMANO -->
+        <button class="btn-member-portal" onclick="openModal('modalAreaHermano')">
+          <span>Área del Hermano</span>
+        </button>
+
+        <!-- MENÚ MÓVIL HAMBURGUESA -->
+        <button class="hamburger-btn" id="openMobileNav" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO PRINCIPAL -->
+<section class="hero-section" id="hero">
+  <div class="hero-bg-wrapper">
+    <img src="images/hero-borriquita.jpg" alt="Procesión de La Borriquita en Fernán Núñez, Domingo de Ramos" class="hero-bg-img" id="heroImg">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="container hero-content">
+    <span class="hero-pretitle">Bienvenidos a la Hermandad</span>
+    <h1 class="hero-main-title">La Borriquita<br>de Fernán Núñez</h1>
+    <p class="hero-tagline">
+      Hermandad y Cofradía de Nuestro Padre Jesús de los Reyes en su Entrada Triunfal en Jerusalén y María Santísima del Rosario
+    </p>
+    <div class="hero-btn-group">
+      <a href="#historia" class="btn-primary">Conoce nuestra Hermandad</a>
+      <a href="#penitencia" class="btn-secondary">Estación de Penitencia</a>
+    </div>
+  </div>
+  <a href="#accesos" class="scroll-indicator" aria-label="Desplazarse hacia abajo">
+    <span>Descubrir</span>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </a>
+</section>
+
+<!-- BOTONES DE ACCESO RÁPIDO -->
+<section class="quick-access-section" id="accesos">
+  <div class="container">
+    <div class="quick-access-grid">
+      <!-- 1. HAZTE HERMANO -->
+      <a href="javascript:void(0)" onclick="openModal('modalHazteHermano')" class="quick-card">
+        <svg class="quick-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+        </svg>
+        <h3 class="quick-card-title">Hazte Hermano</h3>
+        <p class="quick-card-desc">Únete a nuestra corporación, forma parte de nuestra historia y acompaña a nuestros Sagrados Titulares.</p>
+        <span class="quick-card-link">
+          Solicitar ingreso
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </span>
+      </a>
+
+      <!-- 2. ÚLTIMAS NOTICIAS -->
+      <a href="#actualidad" class="quick-card">
+        <svg class="quick-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path>
+          <path d="M18 14h-8"></path>
+          <path d="M15 18h-5"></path>
+          <path d="M10 6h8v4h-8V6Z"></path>
+        </svg>
+        <h3 class="quick-card-title">Últimas Noticias</h3>
+        <p class="quick-card-desc">Mantente informado de todos los comunicados, preparativos de culto y vida diaria de la Hermandad.</p>
+        <span class="quick-card-link">
+          Ver actualidad
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </span>
+      </a>
+
+      <!-- 3. DOCUMENTACIÓN -->
+      <a href="javascript:void(0)" onclick="openModal('modalDocumentacion')" class="quick-card">
+        <svg class="quick-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        <h3 class="quick-card-title">Documentación</h3>
+        <p class="quick-card-desc">Accede a las Reglas de la Hermandad, convocatorias de Cabildo, papeletas de sitio e impresos oficiales.</p>
+        <span class="quick-card-link">
+          Consultar archivos
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN HISTORIA -->
+<section class="section-padding history-section" id="historia">
+  <div class="container">
+    <div class="editorial-split">
+      <div class="history-image-frame">
+        <img src="images/historia-origenes.jpg" alt="Historia y orígenes de la Hermandad de la Borriquita de Fernán Núñez">
+        <div class="image-badge-floating">
+          <p style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-light);">Tradición Cofrade</p>
+          <p style="font-size: 1.1rem; margin-top: 0.25rem;">Domingo de Ramos en Fernán Núñez</p>
+        </div>
+      </div>
+      <div class="history-content">
+        <span class="kicker">Nuestros Orígenes</span>
+        <h2 class="section-title">Conoce Nuestra Historia</h2>
+        <div class="gold-divider"></div>
+        <div class="history-prose">
+          <p class="dropcap">
+            La Hermandad y Cofradía de Nuestro Padre Jesús de los Reyes en su Entrada Triunfal en Jerusalén y María Santísima del Rosario mantiene una trayectoria vinculada a la Semana Santa de Fernán Núñez y a la celebración del Domingo de Ramos.
+          </p>
+          <p>
+            Desde su fundación en el seno de la comunidad parroquial de Santa Marina de Aguas Santas, la corporación ha congregado a generaciones de cofrades, con especial arraigo en la juventud y en la alegría de los niños que portan palmas y ramas de olivo en la mañana más luminosa del año.
+          </p>
+          <p>
+            Con el paso de los años, el cuidado de su patrimonio artístico, la consolidación de sus cultos solemnes y el compromiso con la caridad han marcado el rumbo fraterno de nuestra hermandad.
+          </p>
+        </div>
+        <button class="btn-primary" style="margin-top: 1rem;" onclick="openModal('modalHistoriaCompleta')">
+          Descubre nuestra historia
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

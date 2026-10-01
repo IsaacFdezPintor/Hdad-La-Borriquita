@@ -1,0 +1,299 @@
+<!-- SECCIÓN ACTUALIDAD -->
+<section class="section-padding news-section" id="actualidad">
+  <div class="container">
+    <div class="section-header-flex">
+      <div>
+        <span class="kicker">¿Qué está pasando?</span>
+        <h2 class="section-title">Las Últimas Noticias</h2>
+        <div class="gold-divider"></div>
+      </div>
+      <div>
+        <button class="btn-primary" onclick="toggleAllNews()" id="toggleNewsBtn" style="font-size: 0.72rem; padding: 0.85rem 1.65rem;">
+          Ver todas las noticias
+        </button>
+      </div>
+    </div>
+
+    <div class="news-grid" id="newsContainer">
+      <!-- NOTICIA 1 -->
+      <article class="news-card">
+        <div class="news-card-img-wrapper">
+          <img src="images/noticia-01.jpg" alt="Cultos de Cuaresma de nuestra Hermandad" class="news-card-img">
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="category">Cultos</span>
+            <span aria-hidden="true">·</span>
+            <time datetime="2026-03-12">12 Marzo, 2026</time>
+          </div>
+          <h3 class="news-title">Cultos de Cuaresma de nuestra Hermandad</h3>
+          <p class="news-excerpt">
+            Convocatoria para el Solemne Triduo en honor a Nuestro Padre Jesús de los Reyes y la Función Principal de Instituto en la Parroquia de Santa Marina.
+          </p>
+          <button class="news-read-more" onclick="openArticleModal(1)">
+            Leer más
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </article>
+
+      <!-- NOTICIA 2 -->
+      <article class="news-card">
+        <div class="news-card-img-wrapper">
+          <img src="images/noticia-02.jpg" alt="Preparativos para el Domingo de Ramos" class="news-card-img">
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="category">Domingo de Ramos</span>
+            <span aria-hidden="true">·</span>
+            <time datetime="2026-03-05">05 Marzo, 2026</time>
+          </div>
+          <h3 class="news-title">Preparativos para el Domingo de Ramos</h3>
+          <p class="news-excerpt">
+            El equipo de priostía y mayordomía intensifica los trabajos de montaje de los pasos procesionales y adecuación de enseres litúrgicos.
+          </p>
+          <button class="news-read-more" onclick="openArticleModal(2)">
+            Leer más
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </article>
+
+      <!-- NOTICIA 3 -->
+      <article class="news-card">
+        <div class="news-card-img-wrapper">
+          <img src="images/noticia-03.jpg" alt="Presentación del cartel de Semana Santa" class="news-card-img">
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="category">Patrimonio</span>
+            <span aria-hidden="true">·</span>
+            <time datetime="2026-02-28">28 Febrero, 2026</time>
+          </div>
+          <h3 class="news-title">Presentación del cartel de Semana Santa</h3>
+          <p class="news-excerpt">
+            Descubierta la obra pictórica que ilustra la salida procesional de La Borriquita en este año jubilar, obra de reconocidos artistas cofrades.
+          </p>
+          <button class="news-read-more" onclick="openArticleModal(3)">
+            Leer más
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </article>
+
+      <!-- NOTICIA 4 (Expandible) -->
+      <article class="news-card extra-news" style="display: none;">
+        <div class="news-card-img-wrapper">
+          <img src="images/noticia-04.jpg" alt="Convocatoria de Cabildo" class="news-card-img">
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="category">Secretaría</span>
+            <span aria-hidden="true">·</span>
+            <time datetime="2026-02-15">15 Febrero, 2026</time>
+          </div>
+          <h3 class="news-title">Convocatoria de Cabildo General</h3>
+          <p class="news-excerpt">
+            Citación formal a todos los hermanos mayores de edad a la asamblea anual de cuentas y orden procesional de la próxima estación de penitencia.
+          </p>
+          <button class="news-read-more" onclick="openArticleModal(4)">
+            Leer más
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </article>
+
+      <!-- NOTICIA 5 (Expandible) -->
+      <article class="news-card extra-news" style="display: none;">
+        <div class="news-card-img-wrapper">
+          <img src="images/noticia-05.jpg" alt="Actos y cultos en honor de nuestros Sagrados Titulares" class="news-card-img">
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="category">Devoción</span>
+            <span aria-hidden="true">·</span>
+            <time datetime="2026-02-01">01 Febrero, 2026</time>
+          </div>
+          <h3 class="news-title">Actos y cultos en honor de nuestros Titulares</h3>
+          <p class="news-excerpt">
+            Devoto besapiés a Nuestro Padre Jesús de los Reyes y solemne besamanos a María Santísima del Rosario, con vigilia de oración de jóvenes.
+          </p>
+          <button class="news-read-more" onclick="openArticleModal(5)">
+            Leer más
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </article>
+
+      <!-- NOTICIA 6 (Expandible) -->
+      <article class="news-card extra-news" style="display: none;">
+        <div class="news-card-img-wrapper">
+          <img src="images/noticia-01.jpg" alt="Reparto de Papeletas de Sitio y Palmas" class="news-card-img">
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span class="category">Mayordomía</span>
+            <span aria-hidden="true">·</span>
+            <time datetime="2026-01-20">20 Enero, 2026</time>
+          </div>
+          <h3 class="news-title">Reparto de Papeletas de Sitio y Palmas</h3>
+          <p class="news-excerpt">
+            Apertura del plazo presencial y telemático para la obtención de la papeleta de sitio y reserva de palmas rizadas para el cortejo.
+          </p>
+          <button class="news-read-more" onclick="openArticleModal(6)">
+            Leer más
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN NUESTROS SAGRADOS TITULARES -->
+<section class="section-padding titulares-section" id="titulares">
+  <div class="container">
+    <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <span class="kicker">Devoción y Patrimonio</span>
+      <h2 class="section-title">Nuestros Sagrados Titulares</h2>
+      <div class="gold-divider centered"></div>
+      <p style="color: rgba(255, 255, 255, 0.75); font-size: 1.05rem;">
+        Eje espiritual, artístico y devocional de la Hermandad, centro de las plegarias y el fervor cofrade de Fernán Núñez cada Domingo de Ramos.
+      </p>
+    </div>
+
+    <div class="titulares-grid">
+      <!-- TITULAR 1: JESÚS DE LOS REYES -->
+      <div class="titular-card">
+        <div class="titular-img-wrapper">
+          <img src="images/jesus-reyes.jpg" alt="Nuestro Padre Jesús de los Reyes en su Entrada Triunfal en Jerusalén" class="titular-img">
+          <div class="titular-scrim"></div>
+        </div>
+        <div class="titular-content">
+          <span class="titular-kicker">Paso de Misterio</span>
+          <h3 class="titular-name">Nuestro Padre Jesús de los Reyes</h3>
+          <p style="font-size: 0.95rem; color: var(--gold-light); font-family: var(--font-serif); margin-bottom: 0.5rem;">
+            En su Entrada Triunfal en Jerusalén
+          </p>
+          <p class="titular-desc">
+            Representa a Cristo aclamado con palmas y ramas de olivo a su entrada en la Ciudad Santa, proclamado Rey con dulzura, majestad y benevolencia pastoral.
+          </p>
+          <button class="btn-primary" onclick="openTitularModal('jesus')">
+            Conocer más
+          </button>
+        </div>
+      </div>
+
+      <!-- TITULAR 2: MARÍA SANTÍSIMA DEL ROSARIO -->
+      <div class="titular-card">
+        <div class="titular-img-wrapper">
+          <img src="images/virgen-rosario.jpg" alt="María Santísima del Rosario, Hermandad de la Borriquita" class="titular-img">
+          <div class="titular-scrim"></div>
+        </div>
+        <div class="titular-content">
+          <span class="titular-kicker">Paso de Palio</span>
+          <h3 class="titular-name">María Santísima del Rosario</h3>
+          <p style="font-size: 0.95rem; color: var(--gold-light); font-family: var(--font-serif); margin-bottom: 0.5rem;">
+            Madre de Dios y Esperanza Nuestra
+          </p>
+          <p class="titular-desc">
+            Dolorosa de mirada compasiva que procesiona bajo palio de terciopelo y orfebrería, portando el Santo Rosario en sus manos como faro de oración perpetua.
+          </p>
+          <button class="btn-primary" onclick="openTitularModal('virgen')">
+            Conocer más
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN GALERÍA -->
+<section class="section-padding gallery-section" id="galeria">
+  <div class="container">
+    <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <span class="kicker">Reportajes, Fotografías y Más</span>
+      <h2 class="section-title">Galería</h2>
+      <div class="gold-divider centered"></div>
+    </div>
+
+    <!-- FILTROS DE CATEGORÍAS -->
+    <div class="filter-nav" role="tablist">
+      <button class="filter-btn active" data-filter="all" onclick="filterGallery('all', this)">Todas</button>
+      <button class="filter-btn" data-filter="domingo" onclick="filterGallery('domingo', this)">Domingo de Ramos</button>
+      <button class="filter-btn" data-filter="cultos" onclick="filterGallery('cultos', this)">Cultos</button>
+      <button class="filter-btn" data-filter="traslados" onclick="filterGallery('traslados', this)">Traslados</button>
+      <button class="filter-btn" data-filter="actos" onclick="filterGallery('actos', this)">Actos</button>
+      <button class="filter-btn" data-filter="vida" onclick="filterGallery('vida', this)">Vida de Hermandad</button>
+    </div>
+
+    <!-- CUADRÍCULA DE FOTOGRAFÍAS -->
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item" data-category="domingo" onclick="openLightbox(0)">
+        <img src="images/galeria-01.jpg" alt="Paso de Nuestro Padre Jesús de los Reyes recorriendo las calles de Fernán Núñez">
+        <div class="gallery-item-overlay">
+          <h4 class="gallery-item-title">Salida Procesional</h4>
+          <span class="gallery-item-cat">Domingo de Ramos</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="cultos" onclick="openLightbox(1)">
+        <img src="images/galeria-02.jpg" alt="Altar del Solemne Triduo en la Parroquia de Santa Marina">
+        <div class="gallery-item-overlay">
+          <h4 class="gallery-item-title">Altar de Cultos</h4>
+          <span class="gallery-item-cat">Cultos</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="domingo" onclick="openLightbox(2)">
+        <img src="images/galeria-03.jpg" alt="Primer plano de María Santísima del Rosario bajo el palio">
+        <div class="gallery-item-overlay">
+          <h4 class="gallery-item-title">Reina del Rosario</h4>
+          <span class="gallery-item-cat">Domingo de Ramos</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="vida" onclick="openLightbox(3)">
+        <img src="images/galeria-04.jpg" alt="Cortejo de niños y nazarenos con palmas blancas">
+        <div class="gallery-item-overlay">
+          <h4 class="gallery-item-title">El Cortejo de Palmas</h4>
+          <span class="gallery-item-cat">Vida de Hermandad</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="actos" onclick="openLightbox(4)">
+        <img src="images/galeria-05.jpg" alt="Bendición de palmas y ramas de olivo en Santa Marina">
+        <div class="gallery-item-overlay">
+          <h4 class="gallery-item-title">Bendición de Palmas</h4>
+          <span class="gallery-item-cat">Actos</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="traslados" onclick="openLightbox(5)">
+        <img src="images/galeria-01.jpg" alt="Traslado solemne de nuestros Sagrados Titulares a su paso procesional">
+        <div class="gallery-item-overlay">
+          <h4 class="gallery-item-title">Traslado a los Pasos</h4>
+          <span class="gallery-item-cat">Traslados</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 3.5rem;">
+      <button class="btn-primary" onclick="showAllGalleryPhotos()">
+        Ver toda la galería
+      </button>
+    </div>
+  </div>
+</section>

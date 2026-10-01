@@ -1,0 +1,6 @@
+{
+  "name": "Hermandad de la Borriquita - Fernán Núñez",
+  "description": "Sitio web oficial de la Hermandad y Cofradía de Nuestro Padre Jesús de los Reyes en su Entrada Triunfal en Jerusalén y María Santísima del Rosario (La Borriquita) de Fernán Núñez (Córdoba).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
